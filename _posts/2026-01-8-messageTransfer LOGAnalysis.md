@@ -672,7 +672,7 @@ void __fastcall sub_FFFFF8060C1243E0(__int64 a1, __int64 a2, __int64 a3)
 # 页表扫描,自己执行页表扫描，寻找隐藏页面。
 路径CR3 -> PML4 -> PDPT -> PD -> PT
 
-```c++  
+```c++
 __int64 __fastcall sub_FFFFF8060C07E396(
         HANDLE ProcessId,
         void (__fastcall *a2)(void *, unsigned __int64, __int128 *, __int64 *))
@@ -871,4 +871,6 @@ __int64 __fastcall sub_FFFFF8060C07E396(
     ObfDereferenceObject(Process);
   return (unsigned int)v9;
 }
+
 ```
+
