@@ -85,7 +85,7 @@ char *__fastcall sub_FFFFF8060C082F32(
 ```
 
 ## 提取&清理
-```C++
+```c++
 __int64 __fastcall sub_FFFFF8060C080D2C(char *_RCX)
 {
   char *v2; // rdi
@@ -670,7 +670,8 @@ void __fastcall sub_FFFFF8060C1243E0(__int64 a1, __int64 a2, __int64 a3)
 ```
 
 # 页表扫描,自己执行页表扫描，寻找隐藏页面。
-(CR3 -> PML4 -> PDPT -> PD -> PT)
+路径CR3 -> PML4 -> PDPT -> PD -> PT
+
 ```c++  
 __int64 __fastcall sub_FFFFF8060C07E396(
         HANDLE ProcessId,
